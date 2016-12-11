@@ -4,4 +4,11 @@ zuul:
     billing: /api/billing/**
 endpoints:
   actuator:
-    enabled: true 
+    enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:12345/eureka
+server:
+  port: 54321
